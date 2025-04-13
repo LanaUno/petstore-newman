@@ -42,7 +42,7 @@ jobs:
         with:
           name: RunReports
           path: testResults 
-          - name: Login to Postman CLI
+      - name: Login to Postman CLI
         run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
       - name: Run API tests
         run: |
